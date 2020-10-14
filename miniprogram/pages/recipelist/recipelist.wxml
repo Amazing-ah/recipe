@@ -1,0 +1,61 @@
+ <!-- 判断是否有菜谱 -->
+ <!-- 有菜谱时显示的内容 -->
+ <view class="hot-recipe-lists">
+ 	<!-- 菜谱列表 -->
+ 	<view class='hot-recipe-list' wx:for="{{recipelist}}" wx:key='_id' bindtap="_gorecipeDetail" data-nickname="{{item.userInfo.nickName}}" data-id="{{item._id}}" data-title="{{item.menuName}}">
+ 		<!-- 菜谱图片 -->
+ 		<view class="recipeimage">
+ 			<image src="{{item.fileId[0]}}"></image>
+ 		</view>
+ 		<!-- 菜谱信息 -->
+ 		<view class="recipeinfo">
+ 			<!-- 菜谱名称 -->
+ 			<view class="recipename">
+ 				<text>{{item.menuName}}</text>
+ 			</view>
+ 			<view class="recipefooter">
+ 				<!-- 几星图片 ， 推荐度（关注度） / 3 来做 -->
+ 				<view class="xingxing" >
+					<block wx:if="{{item.views>=0&&item.views<10}}">
+ 						<image  src="/static/index/xing0.png"></image>
+ 					</block>
+ 					<block wx:elif="{{ item.views >=10 && item.views<20 }}">
+ 						<image  src="/static/index/xing1.png"></image>
+ 					</block>
+					 <block wx:elif="{{ item.views >=20 && item.views<30 }}">
+ 						<image  src="/static/index/xing2.png"></image>
+					 </block>
+					 <block wx:elif="{{ item.views >=30 && item.views<40 }}">
+ 						<image  src="/static/index/xing3.png"></image>
+					 </block>
+					 <block wx:elif="{{ item.views >=40 && item.views<50 }}">
+ 						<image  src="/static/index/xing4.png"></image>
+					 </block>
+					 <block wx:else>
+ 						<image  src="/static/index/xing5.png"></image>
+ 					</block>
+
+
+ 				</view>
+ 				<!-- 菜谱发布人信息 -->
+ 				<view class="recipedetail">
+ 					<image class="usernameimage" src="{{item.userInfo.avataUrl}}"></image>
+ 					<text>{{item.userInfo.nickName}}</text>
+ 					<image class="tjimage" src="/static/index/tj.png"></image>
+ 					<text>{{item.follows}}</text>
+ 					<image class="hotimage" src="/static/index/hot.png"></image>
+ 					<text>{{item.views}}</text>
+ 				</view>
+ 			</view>
+
+ 		</view>
+ 	</view>
+ </view>
+ <!-- 没有菜谱时显示的内容 -->
+ <view class="tips" wx:if="{{isShow}}">
+ 	暂时还没有朋友发布菜谱哦！！！
+ </view>
+ <!-- 滚动获取数据时，数据不够的情况 -->
+ <view class="tips" wx:else>
+ 	已经没有数据啦！！！
+ </view>

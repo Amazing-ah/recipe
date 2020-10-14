@@ -1,0 +1,130 @@
+/* pages/personal/personal.wxss */
+
+.userInfo .userinfo_img {
+  width: 750rpx;
+  height: 300rpx;
+}
+
+.userInfo .userinfo_info image {
+  width: 160rpx;
+  height: 160rpx;
+  margin-bottom: 10rpx;
+  border-radius: 50%;
+}
+
+.userinfo_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30rpx;
+  left: 295rpx;
+}
+
+.btn-login{
+  color: white;
+  background-color: rgba(0,0,0,0);
+  border: 2rpx solid #fff;
+}
+
+.nickname{
+  color: white;
+}
+/* 处理页面选项卡问题 */
+.tab {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+.topTabSwiper {
+  /* border-top: 1px solid #ccc; */
+  border-bottom: 2rpx solid #ccc;
+  zoom: 1;
+}
+
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* 点击选项卡，添加颜色 */
+.tabBorer {
+  border-bottom: 2rpx solid #f00;
+  color: #f00;
+}
+
+/* 处理个人中心页面未登录状态显示的内容 */
+.abcdef {
+  width: 200px;
+  height: 200px;
+}
+
+.content {
+  margin: 20rpx 0;
+}
+
+/* 菜单列表 */
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.cdli {
+  width: 45%;
+  border: 2rpx solid #ccc;
+  float: left;
+  margin-left: 3%;
+  margin-top: 10rpx;
+  white-space: nowrap;
+  border-radius: 30rpx;
+
+}
+
+.cdli view {
+  display: inline-block;
+}
+
+.delCdlb {
+  width: 100rpx;
+  height: 360rpx;
+  background: #f00;
+  /* color: #fff; */
+  position: relative;
+  top: -150rpx;
+}
+
+.cdli_info {
+  width: 100%;
+  height: 100%;
+
+}
+
+.cdli_info image {
+  width: 100%;
+  height: 285rpx;
+  position: relative;
+  border-radius: 30rpx;
+}
+
+.cdli_info text {
+  width: 100%;
+  display: block;
+  font-size: 30rpx;
+}
+
+.cdlitj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cdlitj image {
+  width: 80rpx;
+  height: 80rpx;
+}

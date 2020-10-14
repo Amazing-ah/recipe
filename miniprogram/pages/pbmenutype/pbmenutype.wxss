@@ -1,0 +1,48 @@
+/* 管理员操作样式-- 菜谱分类 */
+.adminPerson {
+  margin-top: 20rpx;
+}
+/* 菜谱分类列表 */
+.cpfllb .btn {
+  padding:0rpx 20rpx;
+  font-size: 20rpx;
+  line-height: 60rpx;
+  color: #fff;
+  border-radius: 10rpx;
+}
+.cpfllb .txt{
+  font-size: 24rpx;
+}
+.cpfllb view {
+  width: 48.5%;
+  height: 110rpx;
+  border: 2rpx solid #ccc;
+  float: left;
+  margin-left: 4rpx;
+  margin-top: 4rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 分类添加按钮 */
+.cptjfl {
+  clear: both;
+}
+
+.cpfllb .fladd {
+  display: flex;
+  justify-content: center;
+}
+
+.cpfllb .fladd1 {
+  display: flex;
+  justify-content: center;
+  border: 2rpx solid #fff;
+  color: #fff;
+}
+
+.cpfllb .fladd image {
+  width: 50rpx;
+  height: 50rpx;
+}

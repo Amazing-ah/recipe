@@ -1,0 +1,63 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+	<view class="page__bd">
+		<!-- 发布菜单 -->
+		<form bindsubmit="_releaseMenu">
+			<!-- 需要菜单名称 -->
+			<view class="weui-cells__title">菜单名称</view>
+			<view class="weui-cells weui-cells_after-title">
+				<view class="weui-cell">
+					<view class="weui-cell__bd">
+						<input class="weui-input" placeholder="请输入菜单名称" name="menuName" />
+					</view>
+				</view>
+			</view>
+			<!-- 选择菜谱分类 -->
+			<view class="weui-cells__title">菜谱分类</view>
+			<view class="weui-cells weui-cells_after-title">
+				<view class="weui-cell">
+					<view class="weui-cell__bd">
+						<radio-group name="recipeTypeid">
+							<!-- 循环遍历菜谱分类 -->
+							<block>
+								<!-- 给当前分类加了一个默认值，随便去了index为0的，第一个 -->
+								<radio value="{{item.typeName}}" style="font-size:27rpx" wx:for="{{menuType}}"
+									wx:key="_id"
+									>{{item.typeName}}</radio>
+							</block>
+						</radio-group>
+					</view>
+				</view>
+			</view>
+			<!-- 菜谱图片 -->
+			<view class="weui-cells__title">菜谱图片</view>
+			<view class="weui-cells weui-cells_after-title">
+				<view class="weui-cell">
+					<view class="weui-cell__bd">
+						<mp-cells>
+							<mp-cell>
+								<mp-uploader max-count="5" title="图片选择" bindselect='_selectImg' files="{{files}}"
+									binddelete="_delImg"
+									></mp-uploader>
+							</mp-cell>
+						</mp-cells>
+					</view>
+				</view>
+			</view>
+			<!-- 菜谱做菜步骤 -->
+			<view class="weui-cells__title">菜品做法</view>
+			<view class="weui-cells weui-cells_after-title">
+				<view class="weui-cell">
+					<view class="weui-cell__bd">
+						<textarea class="weui-textarea" name="recipesMake" placeholder-style="font-size:26rpx"
+							placeholder="请输入菜品做法" style="height: 6.6em" />
+						<view class="weui-textarea-counter">不限字数</view>
+          </view>
+        </view>
+      </view>
+      <!-- 发布  需要当前用户的openid（云开发自带）-->
+      <view class="weui-btn-area">
+        <button class="weui-btn"  type="primary" form-type="submit">发布</button>
+      </view>
+    </form>
+  </view>
+</view>

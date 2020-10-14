@@ -1,0 +1,6 @@
+/* pages/pbmenu/pbmenu.wxss */
+
+.weui-cells__title{
+  font-size: 40rpx;
+  color: deeppink;
+}

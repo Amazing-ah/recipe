@@ -1,0 +1,83 @@
+.container_recipeimage image{
+  width: 100%;
+  height: 500rpx;
+}
+.container_recipeimage{
+  width: 100%;
+  height: 500rpx;
+}
+.container_info{
+  padding: 30rpx 20rpx 20rpx 20rpx;
+}
+/* 菜谱名称 */
+.container_info_recipename  text{
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+/* 菜谱 作业  收藏 浏览 */
+.container_info_recipedetail text{
+  margin-right: 40rpx;
+  font-size: 30rpx;
+  color: #aaa;
+}
+/* 中间灰色分割线 */
+.fgx{
+  width: 94%;
+  height: 4rpx;
+  background: #ccc;
+  margin-left: 3%;
+  margin: 20rpx 3%;
+}
+/* 菜谱做法 */
+.recipedetail{
+  padding: 20rpx 20rpx 60rpx  20rpx;
+  font-size: 30rpx;
+  color: #aaa;
+  margin-bottom: 130rpx;
+}
+/* 底部导航 */
+.container_bottom{
+  width: 100%;
+  height: 100rpx;
+  /* border-top: 1px solid red; */
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  background: #fff;
+  margin-top: 40rpx;
+}
+/* 底部导航图片大小 */
+.container_bottom  .guanzhu image{
+    width: 60rpx;
+    height: 60rpx;
+}
+/* 关注 */
+.guanzhu{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10rpx;
+}
+.guanzhu image{
+  margin-right: 10rpx;
+}
+/* 分享 */
+.share{
+  flex: 1;
+  background: #ef6259;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20rpx;
+}
+/* 分享图片大小 */
+.share  image{
+    width: 50rpx;
+    height: 50rpx;
+}
+.btn{
+  margin-left: 20rpx;
+  background:#ef6259;
+  color: #fff; 
+}

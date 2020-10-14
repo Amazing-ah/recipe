@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/typelist/typelist",
+    "pages/search/search",
+    "pages/recipeDetail/recipeDetail",
+    "pages/recipelist/recipelist",
+    "pages/personal/personal",
+    "pages/pbmenutype/pbmenutype",
+    "pages/pbmenu/pbmenu"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f6623a",
+    "navigationBarTitleText": "云菜谱平台",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#f75f3d",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/index.png",
+        "selectedIconPath": "icon/index-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "icon/search.png",
+        "selectedIconPath": "icon/search-active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "icon/personal.png",
+        "selectedIconPath": "icon/personal-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "usingComponents": {
+    "mp-badge": "/miniprogram_npm/weui-miniprogram/badge/badge",
+    "my-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar",
+    "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
+    "mp-cell": "/miniprogram_npm/weui-miniprogram/cell/cell",
+    "mp-slideview": "/miniprogram_npm/weui-miniprogram/slideview/slideview",
+    "mp-uploader": "/miniprogram_npm/weui-miniprogram/uploader/uploader"
+  }
+}

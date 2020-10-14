@@ -1,0 +1,32 @@
+<view class='adminPerson'>
+	<!-- 菜谱分类列表 (菜谱分类列表) -->
+	<view class='cpfllb'>
+		<view wx:for="{{menu}}" wx:key="index">
+			<text class="txt">{{item.typeName}}</text>
+			<text class="btn"  style="background:#f1613c" bindtap="_doMenuTypeDel" data-id="{{item._id}}">删除</text>
+			<text class="btn" style="background:#4578ff" bindtap="_doMenuTypeChage" data-id="{{item._id}}">修改</text>
+		</view>
+	</view>
+	<!--    页面 （菜谱添加分类） -->
+	<view class='cptjfl'>
+
+		<mp-cell prop="mobile" ext-class=" weui-cell_vcode">
+			<!-- 输入菜谱分类 -->
+			<input class="weui-input" placeholder="输入菜谱分类"  bindinput="_addMenuType" />
+			<view slot="footer" class="weui-vcode-btn" bindtap="_doAddType">添加</view>
+		</mp-cell>
+	</view>
+	<!-- 修改页面  （菜谱修改分类）-->
+	<view class='cpxgfl' >
+
+		<mp-cell prop="mobile" ext-class=" weui-cell_vcode">
+			<!-- 输入菜谱分类 -->
+			<input value="{{willChangeMenu}}" class="weui-input" 
+			placeholder="输入菜谱分类"  bindinput="_changeMenuType"/>
+			
+			<view slot="footer" class="weui-vcode-btn" bindtap="_changeTypeName" >修改</view>
+		</mp-cell>
+
+	</view>
+
+</view>

@@ -1,0 +1,150 @@
+/*  */
+page {
+  background: #fafaf8;
+}
+
+.bgImgae {
+  width: 100%;
+  height: 300rpx;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.search {
+  width: 100%;
+  height: 80rpx;
+  /* background: rgb(244,96,56); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30rpx;
+}
+
+.search_view {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  height: 70rpx;
+  /* border: 1px solid  #ff0; */
+  border-radius: 40rpx;
+  background: #fff;
+}
+
+.search input {
+  width: 82%;
+  height: 76rpx;
+
+}
+
+.search text {
+  color: #f00;
+  margin-left:10rpx;
+}
+
+/* 分类导航 */
+.sort-menu {
+  width: 100%;
+  height: 180rpx;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.sort-menu image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.sort-menu text {
+  font-size: 24rpx;
+}
+
+.sort-menu .menu-list {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 热门菜谱 */
+
+.hot-recipe {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 热门菜谱列表大盒子 */
+.hot-recipe-lists {
+  padding: 10rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 热门菜谱列表 */
+.hotlist {
+  width: 48%;
+  height: 380rpx;
+  /* border: 1px solid red; */
+  border-radius: 20rpx;
+  float: left;
+  margin: 1%;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.recipeimage {
+  height: 225rpx;
+  width: 100%;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.hotlist_info {
+  padding: 2rpx 20rpx;
+}
+
+.recipename {
+  font-size: 34rpx;
+  font-weight: bolder
+}
+
+.usernameimage {
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+}
+
+.hotimage {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.dedailinfo {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dedailinfo view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dedailinfo text {
+  font-size: 30rpx;
+  color: #bbb;
+  margin-left: 6rpx;
+}
